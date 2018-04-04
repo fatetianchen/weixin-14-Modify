@@ -87,7 +87,7 @@ ul,li{
 	width: 6rem;
 	height: 1.6rem;
 	margin-left: 1.1rem;
-	background: #ccc url(../images/button.png) no-repeat center center;
+	background:  url(../images/hhhhh_03.png) no-repeat center center;
 	background-size: 100% 100%;
 	/*background-size:cover ;*/
 	border-radius: 0.25rem ;
@@ -96,6 +96,11 @@ ul,li{
 	border: none;
 	z-index: 33;
 	
+}
+.button1{
+	background:  url(../images/button.png) no-repeat center center !important;
+	background-size: 100% 100% !important;
+	box-shadow: 0rem 0rem 1.5rem #ff2222 !important;
 }
 .ann .ann-title{
 	width: 12rem;
@@ -279,7 +284,7 @@ ul,li{
 .ain-y{
 	position: absolute;
 	right: 2rem;
-	bottom: 3.3rem;
+	bottom: 3.5rem;
 	width: 5rem;
 	height: 8rem;
 	background: url(../images/ain-y.png) no-repeat center center;
@@ -326,7 +331,7 @@ ul,li{
     width: 100%;
     height: 5rem;
     z-index: 9;
-	background: url(../images/ain-g.png) no-repeat center center;
+	background: url(../images/gguu.png) no-repeat center center;
 	background-size: 100% 100%;
 	
 	opacity: 0;
@@ -377,7 +382,7 @@ ul,li{
 .ain-q{
 	position: absolute;
 	right: 2rem;
-    bottom: 5.5rem;
+    bottom: 4.5rem;
     width: 10.5rem;
     height: 9rem;
     z-index: 10;
@@ -396,31 +401,33 @@ ul,li{
 }
 
 .ain-qh14s{
-	animation: name 1s 0.8s forwards;
+	
+	/*animation-timing-function:;*/
+	animation: name 1.5s ease-out 0.8s forwards;
 }
 .ain-1s{
-	animation: name1 1s 0.8s forwards;
+	animation: name1 1.5s ease-out 0.8s forwards;
 }
 .ain-zs{
-	animation: namez 1s 1s forwards;
+	animation: namez 1.5s ease-out 1s forwards;
 }
 .ain-ys{
-	animation: namey 1s 1s forwards;
+	animation: namey 1.5s ease-out 1s forwards;
 }
 .ain-ws{
-	animation: namew 1s 1.2s forwards;
+	animation: namew 1.5s ease-out 1.2s forwards;
 }
 .ain-gs{
 	animation: nameg 1.5s  1.8s  infinite;
 }
 .ain-xs{
-	animation: namex 1s 1.4s forwards;
+	animation: namex 1.5s ease-out 1.4s forwards;
 }
 .ain-hs{
-	animation: namex 1s 1.4s forwards;
+	animation: namex 1.5s ease-out 1.4s forwards;
 }
 .ain-qs{
-	animation: nameq 1s 1.4s forwards;
+	animation: nameq 1.5s ease-out 1.4s forwards;
 }
 
 

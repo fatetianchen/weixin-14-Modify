@@ -45,24 +45,28 @@ function isChinese(cdk){
 function formbth() {
 	var str = '';
 	$(".bth").attr("disabled",true);
-	$('.bth').css({'background-color':'#ccc'});
+//	$('.bth').css({'background-color':'#ccc'});
 	if($.trim($('#cdkey').val()).length == 0) {
 			str += '不能为空\n';
+			$('.bth').removeClass('button1');
 			
 	}else if(isChinese(($('#cdkey').val())) == false){
 			str += '含特殊字符\n';
+			$('.bth').removeClass('button1');
 	}
 	
 	if($.trim($('#PN').val()).length == 0) {
 			str += '不能为空\n';
+			$('.bth').removeClass('button1');
 	}else if(isChinese(($('#PN').val())) == false){
 			str += '含特殊字符\n';
+			$('.bth').removeClass('button1');
 	}
 	if(str != '') {
 		  return false;
 	} else {
 		$(".bth").attr("disabled",false);
-		$('.bth').css({'background-color':'rgba(0,0,0,0.5)',"box-shadow": "0rem 0rem 1.5rem #ff2222"});
+		$('.bth').addClass('button1');
 	}
 }
 $('#PN').bind('input propertychange', function() {
