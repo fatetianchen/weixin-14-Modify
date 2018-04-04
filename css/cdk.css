@@ -111,17 +111,20 @@ ul,li{
 }
 .title-no{
 	position: absolute;
-	top: 5.5rem;
-    left: 0rem;
-    width: 100%;
-    height: 2rem;
-	text-align: center;
-	line-height: 2rem;
-	font-size: 1rem;
-	padding-left: 1.1rem;
-	color: #fff;
-	box-sizing: border-box;
-	display: none;
+    top: 3rem;
+    left: 50%;
+    width: 14rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1rem;
+    color: #fff;
+    margin-left: -7rem;
+    display: none;
+    background: url(../images/mian-ccdk.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding-top: 2rem;
+    box-sizing: border-box;
 }
 .title-no>span{
 	display: inline-block;
@@ -215,7 +218,7 @@ ul,li{
 	bottom: 0.5rem;
 	left: 50%;
 	margin-left: -7rem;
-	animation: name 1s 0.8s forwards;
+	
 	z-index: 12;
 	transform: scale(2,2);
 }
@@ -236,7 +239,7 @@ ul,li{
 	bottom: 3rem;
 	left: 50%;
 	margin-left: -2.5rem;
-	animation: name1 1s 0.8s forwards;
+	
 	z-index: 9;
 	transform: translate(0rem,-2rem);
 }
@@ -257,7 +260,7 @@ ul,li{
 	background: url(../images/ain-z.png) no-repeat center center;
 	background-size: 100% 100%;
 	opacity: 0;
-	animation: namez 1s 1s forwards;
+	
 	z-index: 8;
 }
 @keyframes namez{
@@ -279,7 +282,7 @@ ul,li{
 	background: url(../images/ain-y.png) no-repeat center center;
 	background-size: 100% 100%;
 	opacity: 0;
-	animation: namey 1s 1s forwards;
+	
 	z-index: 8;
 }
 @keyframes namey{
@@ -303,7 +306,7 @@ ul,li{
 	background: url(../images/ain-w.png) no-repeat center center;
 	background-size: 100% 100%;
 	opacity: 0;
-	animation: namew 1s 1.2s forwards;
+	
 }
 @keyframes namew{
 	from{
@@ -322,7 +325,7 @@ ul,li{
     z-index: 9;
 	background: url(../images/ain-g.png) no-repeat center center;
 	background-size: 100% 100%;
-	animation: nameg 1.5s  1.8s  infinite;
+	
 	opacity: 0;
 }
 @keyframes nameg{
@@ -345,7 +348,7 @@ ul,li{
 	background: url(../images/ain-x.png) no-repeat center center;
 	background-size: 100% 100%;
 	opacity: 0;
-	animation: namex 1s 1.4s forwards;
+	
 }
 
 .ain-h{
@@ -358,7 +361,7 @@ ul,li{
 	background: url(../images/ain-h.png) no-repeat center center;
 	background-size: 100% 100%;
 	opacity: 0;
-	animation: namex 1s 1.4s forwards;
+	
 }
 @keyframes namex{
 	from{
@@ -378,7 +381,7 @@ ul,li{
 	background: url(../images/ain-q.png) no-repeat center center;
 	background-size: 100% 100%;
 	opacity: 0;
-	animation: nameq 1s 1.4s forwards;
+	
 }
 @keyframes nameq{
 	from{
@@ -387,6 +390,34 @@ ul,li{
 	to{
 		opacity: 1;
 	}
+}
+
+.ain-qh14s{
+	animation: name 1s 0.8s forwards;
+}
+.ain-1s{
+	animation: name1 1s 0.8s forwards;
+}
+.ain-zs{
+	animation: namez 1s 1s forwards;
+}
+.ain-ys{
+	animation: namey 1s 1s forwards;
+}
+.ain-ws{
+	animation: namew 1s 1.2s forwards;
+}
+.ain-gs{
+	animation: nameg 1.5s  1.8s  infinite;
+}
+.ain-xs{
+	animation: namex 1s 1.4s forwards;
+}
+.ain-hs{
+	animation: namex 1s 1.4s forwards;
+}
+.ain-qs{
+	animation: nameq 1s 1.4s forwards;
 }
 
 
@@ -515,6 +546,7 @@ ul,li{
     text-align: center;
     font-size: 0.6rem;
     color: #000;
+    letter-spacing: 0.1rem;
 }
 .zhezhao{
 	position: fixed;
@@ -522,6 +554,29 @@ ul,li{
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+	background-color: black;
 	display: none;
+}
+.zaijia{
+	width: 2rem;
+	height: 2rem;
+	background: url(../images/jiazai.png) no-repeat center center;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -1rem;
+	margin-top: -1rem;
+	animation: nameo 1s infinite linear;
+}
+@keyframes nameo{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
 }

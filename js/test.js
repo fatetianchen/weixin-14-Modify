@@ -1,3 +1,14 @@
+$(document).ready(function(){
+	$('.ain-qh14').addClass('ain-qh14s');
+	$('.ain-1').addClass('ain-1s');
+	$('.ain-z').addClass('ain-zs');
+	$('.ain-y').addClass('ain-ys');
+	$('.ain-w').addClass('ain-ws');
+	$('.ain-g').addClass('ain-gs');
+	$('.ain-x').addClass('ain-xs');
+	$('.ain-h').addClass('ain-hs');
+	$('.ain-q').addClass('ain-qs');
+}); 		
 	$("#cdkey").bind('input propertychange',function(){
          	var user = $("#cdkey").val(); 
          	var Chinese = /^[\w\?%&=\-_]+$/;
@@ -80,9 +91,9 @@ console.log(hrt);
 if(hrt<800){
 	$('body').css('height','28rem');
 }
-$('input').click(function(){
-	$('body').height('28.38rem');
-})
+//$('input').click(function(){
+//	$('body').height('28.38rem');
+//})
 //$(document).ready(function () {
 //　　$('body').height('28rem');
 //});
@@ -135,8 +146,14 @@ function postData(url, data) {
 				            		 codeIdd.push( result[i]);				               
 				            }
 				        }
-				        
-				        $('.title-no').html("<span>"+codeIdd[0].codeString+"</span>");
+				        $('.zhezhao').css("display","block");
+						$('body').css({"background":"url(images/beijing2.jpg) no-repeat center center","background-size":"100% 100%"})
+						$('.header').css("display","none");
+						$('.ain').css("display","none");
+						$('.title-no').css("display","block");
+				        var p = setTimeout(function(){
+							$('.zhezhao').css("display","none");
+						  },800);$('.title-no').html("<span>"+codeIdd[0].codeString+"</span>");
 //				        console.log(codeId[0]);
 						var codeIdo = "https://weixin-test-ziweigamepoch.c9users.io/api/codes/"+codeIdd[0]._id+"?_method=PATCH";
 //						console.log(codeIdo)
@@ -199,10 +216,7 @@ function postData(url, data) {
 }
 
 $('.button').on('click', function(){
-	$('body').css({"background":"url(images/beijing2.jpg) no-repeat center center","background-size":"100% 100%"})
-	$('.header').css("display","none");
-	$('.ain').css("display","none");
-	$('.title-no').css("display","block");
 	nameC();
 	postData();
+	
 });
