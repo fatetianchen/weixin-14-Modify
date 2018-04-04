@@ -80,6 +80,12 @@ console.log(hrt);
 if(hrt<800){
 	$('body').css('height','28rem');
 }
+$('input').click(function(){
+	$('body').height('28.38rem');
+})
+//$(document).ready(function () {
+//　　$('body').height('28rem');
+//});
 function nameC(){
 	var w = parseInt(Math.random()*99+1);
 	var e = parseInt(Math.random()*99+1);
