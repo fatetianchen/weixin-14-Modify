@@ -77,11 +77,8 @@ var user ="user"+a+Zn+Zn2+c+Zn1;
 //console.log(user);
 var hrt = document.body.clientHeight;
 console.log(hrt);
-$('input').click(function(){
 	if(hrt<800){
-	$('body').css('height','28rem');
-}
-});
+	$('body').css('height','28rem !important');
 
 
 $('.button').on('click', function(){
