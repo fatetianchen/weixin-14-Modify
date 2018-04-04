@@ -77,9 +77,9 @@ var user ="user"+a+Zn+Zn2+c+Zn1;
 //console.log(user);
 var hrt = document.body.clientHeight;
 console.log(hrt);
-	if(hrt<800){
-	$('body').css('height','28rem !important');
-
+if(hrt<800){
+	$('body').css('height','28rem');
+}
 
 $('.button').on('click', function(){
 	$('body').css({"background":"url(images/beijing2.jpg) no-repeat center center","background-size":"100% 100%"})
