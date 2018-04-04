@@ -517,8 +517,12 @@ ul,li{
     font-size: 0.6rem;
     color: #000;
 }
-/*@media only screen and (max-height: 30rem) {
-	.ain{
-		display: none;
-	}
-}*/
+.zhezhao{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	display: none;
+}

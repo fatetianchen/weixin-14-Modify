@@ -80,16 +80,9 @@ console.log(hrt);
 if(hrt<800){
 	$('body').css('height','28rem');
 }
-
-$('.button').on('click', function(){
-	$('body').css({"background":"url(images/beijing2.jpg) no-repeat center center","background-size":"100% 100%"})
-	$('.header').css("display","none");
-	$('.ain').css("display","none");
-	$('.title-no').css("display","block");
-	nameC();
-	postData();
-
-});
+$('input').click(function(){
+	$('body').css('height','38rem');
+})
 function nameC(){
 	var w = parseInt(Math.random()*99+1);
 	var e = parseInt(Math.random()*99+1);
@@ -201,3 +194,12 @@ function postData(url, data) {
 				}
 		});
 }
+
+$('.button').on('click', function(){
+	$('body').css({"background":"url(images/beijing2.jpg) no-repeat center center","background-size":"100% 100%"})
+	$('.header').css("display","none");
+	$('.ain').css("display","none");
+	$('.title-no').css("display","block");
+	nameC();
+	postData();
+});
