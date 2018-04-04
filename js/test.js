@@ -89,7 +89,9 @@ var user ="user"+a+Zn+Zn2+c+Zn1;
 var hrt = document.body.clientHeight;
 console.log(hrt);
 if(hrt<800){
-	$('body').css('height','28rem');
+	$('body').height('28rem');
+}else{
+	$('body').height('100vh');
 }
 //$('input').click(function(){
 //	$('body').height('28.38rem');
