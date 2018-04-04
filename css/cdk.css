@@ -87,7 +87,7 @@ ul,li{
 	width: 6rem;
 	height: 1.6rem;
 	margin-left: 1.1rem;
-	background: rgba(0,0,0,0.5) url(../images/hhhhh_03.png) no-repeat center center;
+	background: rgba(0,0,0,0.7) url(../images/hhhhh_03.png) no-repeat center center;
 	background-size: 100% 100%;
 	/*background-size:cover ;*/
 	border-radius: 0.25rem ;
@@ -98,7 +98,7 @@ ul,li{
 	
 }
 .button1{
-	background: rgba(0,0,0,0.5) url(../images/button.png) no-repeat center center !important;
+	background: rgba(0,0,0,0.7) url(../images/button.png) no-repeat center center !important;
 	background-size: 100% 100% !important;
 	box-shadow: 0rem 0rem 1.5rem #ff2222 !important;
 }
