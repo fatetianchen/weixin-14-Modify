@@ -94,6 +94,7 @@ ul,li{
 	box-shadow: 0px 0.07rem 0.37rem #000;
 	outline: none;
 	border: none;
+	z-index: 33;
 	
 }
 .ann .ann-title{
@@ -205,7 +206,7 @@ ul,li{
 	width: 100%;
 	position: absolute;
 	z-index: -1;
-	bottom: 0;
+	top: 28.3rem;
 	left: 0;
 	/*height: 15rem;*/
 	/*background-color: pink;*/
