@@ -148,14 +148,15 @@ function postData(url, data) {
 				            		 codeIdd.push( result[i]);				               
 				            }
 				        }
-				        $('.zhezhao').css("display","block");
 						$('body').css({"background":"url(images/beijing2.jpg) no-repeat center center","background-size":"100% 100%"})
+						$('.zhezhao').css("display","block");
 						$('.header').css("display","none");
 						$('.ain').css("display","none");
 						$('.title-no').css("display","block");
 				        var p = setTimeout(function(){
 							$('.zhezhao').css("display","none");
-						  },800);$('.title-no').html("<span>"+codeIdd[0].codeString+"</span>");
+						  },800);
+						$('.title-no').html("<span>"+codeIdd[0].codeString+"</span>");
 //				        console.log(codeId[0]);
 						var codeIdo = "https://weixin-test-ziweigamepoch.c9users.io/api/codes/"+codeIdd[0]._id+"?_method=PATCH";
 //						console.log(codeIdo)
