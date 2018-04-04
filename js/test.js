@@ -76,9 +76,10 @@ var c = parseInt(Math.random()*99+1);
 var user ="user"+a+Zn+Zn2+c+Zn1;
 //console.log(user);
 $('.button').on('click', function() {
-	window.location.href = "obtain.html";
-//	nameC();
-//	postData();
+	
+	nameC();
+	postData();
+
 });
 function nameC(){
 	var w = parseInt(Math.random()*99+1);
@@ -123,17 +124,14 @@ function postData(url, data) {
 				    data: {},
 				    success: function (result) {
 //					console.log(result);
-				        $(".form").css('display','none');
-				        $('.title-no').css('display','block');
 				        for(var i in result) { //
 				            if(result[i].codeType==1&&result[i].isUsed==false){ 
 //				            	console.log(result[i])
 				            		 codeIdd.push( result[i]);				               
 				            }
 				        }
-				        $('.title-no').html("<span>"+codeIdd[0].codeString+"</span>");
-						$('.bth').css('display','none');
-						$('.ann-title').css('display','block'); 
+				        window.location.href = "obtain.html";
+				        $('.main-cdk').html("<span>"+codeIdd[0].codeString+"</span>");
 //				        console.log(codeId[0]);
 						var codeIdo = "https://weixin-test-ziweigamepoch.c9users.io/api/codes/"+codeIdd[0]._id+"?_method=PATCH";
 //						console.log(codeIdo)
@@ -187,6 +185,7 @@ function postData(url, data) {
 					}
 				});
 			}
+			
 		},
 		error : function(err) {
 			alert(err.responseText);
