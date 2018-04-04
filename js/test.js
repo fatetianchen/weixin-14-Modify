@@ -1,7 +1,6 @@
 var hrt = $(window).height();
 console.log(hrt);
-
-$(document).ready(function(){
+window.onload=function(){
 	$('.ain-qh14').addClass('ain-qh14s');
 	$('.ain-1').addClass('ain-1s');
 	$('.ain-z').addClass('ain-zs');
@@ -12,7 +11,7 @@ $(document).ready(function(){
 	$('.ain-h').addClass('ain-hs');
 	$('.ain-q').addClass('ain-qs');
 	$('body').height(hrt+'px');
-}); 		
+}; 		
 	$("#cdkey").bind('input propertychange',function(){
          	var user = $("#cdkey").val(); 
          	var Chinese = /^[\w\?%&=\-_]+$/;
