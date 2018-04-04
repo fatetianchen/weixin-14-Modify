@@ -87,7 +87,7 @@ ul,li{
 	width: 6rem;
 	height: 1.6rem;
 	margin-left: 1.1rem;
-	background:  url(../images/hhhhh_03.png) no-repeat center center;
+	background: rgba(0,0,0,0.5) url(../images/hhhhh_03.png) no-repeat center center;
 	background-size: 100% 100%;
 	/*background-size:cover ;*/
 	border-radius: 0.25rem ;
@@ -98,7 +98,7 @@ ul,li{
 	
 }
 .button1{
-	background:  url(../images/button.png) no-repeat center center !important;
+	background: rgba(0,0,0,0.5) url(../images/button.png) no-repeat center center !important;
 	background-size: 100% 100% !important;
 	box-shadow: 0rem 0rem 1.5rem #ff2222 !important;
 }
@@ -403,31 +403,31 @@ ul,li{
 .ain-qh14s{
 	
 	/*animation-timing-function:;*/
-	animation: name 1.5s ease-out 0.8s forwards;
+	animation: name 1.3s ease-out 0.8s forwards;
 }
 .ain-1s{
-	animation: name1 1.5s ease-out 0.8s forwards;
+	animation: name1 1.3s ease-out 0.8s forwards;
 }
 .ain-zs{
-	animation: namez 1.5s ease-out 1s forwards;
+	animation: namez 1.3s ease-out 1s forwards;
 }
 .ain-ys{
-	animation: namey 1.5s ease-out 1s forwards;
+	animation: namey 1.3s ease-out 1s forwards;
 }
 .ain-ws{
-	animation: namew 1.5s ease-out 1.2s forwards;
+	animation: namew 1.3s ease-out 1.2s forwards;
 }
 .ain-gs{
-	animation: nameg 1.5s  1.8s  infinite;
+	animation: nameg 1.3s  1.8s  infinite;
 }
 .ain-xs{
-	animation: namex 1.5s ease-out 1.4s forwards;
+	animation: namex 1.3s ease-out 1.4s forwards;
 }
 .ain-hs{
-	animation: namex 1.5s ease-out 1.4s forwards;
+	animation: namex 1.3s ease-out 1.4s forwards;
 }
 .ain-qs{
-	animation: nameq 1.5s ease-out 1.4s forwards;
+	animation: nameq 1.3s ease-out 1.4s forwards;
 }
 
 
