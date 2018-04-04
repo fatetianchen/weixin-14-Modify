@@ -75,8 +75,17 @@ var a = parseInt(Math.random()*99+1);
 var c = parseInt(Math.random()*99+1);
 var user ="user"+a+Zn+Zn2+c+Zn1;
 //console.log(user);
-$('.button').on('click', function() {
-	
+var hrt = document.body.clientHeight;
+console.log(hrt);
+if(hrt<800){
+	$('body').css('height','28rem');
+}
+
+$('.button').on('click', function(){
+	$('body').css({"background":"url(images/beijing2.jpg) no-repeat center center","background-size":"100% 100%"})
+	$('.header').css("display","none");
+	$('.ain').css("display","none");
+	$('.title-no').css("display","block");
 	nameC();
 	postData();
 
@@ -115,57 +124,58 @@ function postData(url, data) {
 		"codeString":$('#cdkey').val()
 		},
 		success: function (result) { 
-//			if(result.isUsed == false){
-//				var codeIdd = [];
-//				$.ajax({ //获取值为1的conde
-//				    type: "GET",
-//				    dataType: "json",
-//				    url: "http://weixin-test-ziweigamepoch.c9users.io/api/codes",//
-//				    data: {},
-//				    success: function (result) {
-////					console.log(result);
-//				        for(var i in result) { //
-//				            if(result[i].codeType==1&&result[i].isUsed==false){ 
-////				            	console.log(result[i])
-//				            		 codeIdd.push( result[i]);				               
-//				            }
-//				        }
-//				        $('.main-cdk').html("<span>"+codeIdd[0].codeString+"</span>");
-////				        console.log(codeId[0]);
-//						var codeIdo = "https://weixin-test-ziweigamepoch.c9users.io/api/codes/"+codeIdd[0]._id+"?_method=PATCH";
-////						console.log(codeIdo)
-//						$.ajax({
-//							url: codeIdo,
-//							method:'POST',
-//							data:{
-//								"owner":user,
-//								"isUsed":true
-//							},//false true
-//							success: function(data){
-////								console.log(data)
-//							},					
-//							error : function(err) {
-//								console.log(err);
-//							}
-//						});
-//						$.ajax({
-//							url: 'https://weixin-test-ziweigamepoch.c9users.io/api/accounts/',
-//							method:'POST',
-//							dataType: "json",
-//							data:{
-//								"unionid":user,
-//								"code0":cdkk,
-//								"code1":codeIdd[0].codeString,
-//							},//false true
-//							success: function(data){
-//							console.log(data)
-//							},					
-//							error : function(err) {
-//							console.log(err);
-//							}
-//						});
-//				    },
-//				});
+			if(result.isUsed == false){
+				var codeIdd = [];
+				$.ajax({ //获取值为1的conde
+				    type: "GET",
+				    dataType: "json",
+				    url: "http://weixin-test-ziweigamepoch.c9users.io/api/codes",//
+				    data: {},
+				    success: function (result) {
+//					console.log(result);
+				        for(var i in result) { //
+				            if(result[i].codeType==1&&result[i].isUsed==false){ 
+//				            	console.log(result[i])
+				            		 codeIdd.push( result[i]);				               
+				            }
+				        }
+				        
+				        $('.title-no').html("<span>"+codeIdd[0].codeString+"</span>");
+//				        console.log(codeId[0]);
+						var codeIdo = "https://weixin-test-ziweigamepoch.c9users.io/api/codes/"+codeIdd[0]._id+"?_method=PATCH";
+//						console.log(codeIdo)
+						$.ajax({
+							url: codeIdo,
+							method:'POST',
+							data:{
+								"owner":user,
+								"isUsed":true
+							},//false true
+							success: function(data){
+//								console.log(data)
+							},					
+							error : function(err) {
+								console.log(err);
+							}
+						});
+						$.ajax({
+							url: 'https://weixin-test-ziweigamepoch.c9users.io/api/accounts/',
+							method:'POST',
+							dataType: "json",
+							data:{
+								"unionid":user,
+								"code0":cdkk,
+								"code1":codeIdd[0].codeString,
+							},//false true
+							success: function(data){
+							console.log(data)
+							},					
+							error : function(err) {
+							console.log(err);
+							}
+						});
+				    },
+				});
 //				此处修改code参数
 				var codeId = "https://weixin-test-ziweigamepoch.c9users.io/api/codes/"+result._id+"?_method=PATCH";
 //				console.log(codeId)
@@ -186,7 +196,7 @@ function postData(url, data) {
 			}
 			
 		},
-		error : function(err) {
+		error : function(err){
 			alert(err.responseText);
 				}
 		});
