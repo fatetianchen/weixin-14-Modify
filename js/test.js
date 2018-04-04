@@ -1,3 +1,6 @@
+var hrt = $(window).height();
+console.log(hrt);
+
 $(document).ready(function(){
 	$('.ain-qh14').addClass('ain-qh14s');
 	$('.ain-1').addClass('ain-1s');
@@ -8,6 +11,7 @@ $(document).ready(function(){
 	$('.ain-x').addClass('ain-xs');
 	$('.ain-h').addClass('ain-hs');
 	$('.ain-q').addClass('ain-qs');
+	$('body').height(hrt+'px');
 }); 		
 	$("#cdkey").bind('input propertychange',function(){
          	var user = $("#cdkey").val(); 
@@ -86,13 +90,6 @@ var a = parseInt(Math.random()*99+1);
 var c = parseInt(Math.random()*99+1);
 var user ="user"+a+Zn+Zn2+c+Zn1;
 //console.log(user);
-var hrt = document.body.clientHeight;
-console.log(hrt);
-if(hrt<800){
-	$('body').height('28rem');
-}else{
-	$('body').height('100vh');
-}
 //$('input').click(function(){
 //	$('body').height('28.38rem');
 //})
